@@ -69,7 +69,7 @@ window.onload = function() {
 
     for (var i = 0; i < objects.length; i++) {
       do {
-        var base_pos = new THREE.Vector3(Math.random() * 1200 - 600, Math.random() * 800 - 400, -5000 - i * 500);
+        var base_pos = new THREE.Vector3(Math.random() * 1200 - 600, Math.random() * 800 - 400, -3000 - i * 500);
       } while(Math.abs(base_pos.y) < 150 || Math.abs(base_pos.x) < 150)
       objects[i].base_pos = base_pos;
       objects[i].position.x = base_pos.x;
@@ -100,7 +100,7 @@ window.onload = function() {
   /* event handler */
   document.getElementById("send").addEventListener("click", function(e) {
     formWidth = 600;
-    formHeight = 350;
+    formHeight = 380;
     form = document.getElementById("form");
     form.style.width = formWidth + "px";
     form.style.height = formHeight + "px";
